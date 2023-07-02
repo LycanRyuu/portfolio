@@ -1,0 +1,85 @@
+:root {
+	--gradient-color-1: #7928ca;
+	--gradient-color-2: #ff0080;
+}
+
+.About {
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+	padding: 2.5rem 2rem;
+}
+
+.Name {
+	font-size: 3rem;
+}
+
+.Title {
+	margin-bottom: 1rem;
+}
+
+.AboutText {
+	font-size: 0.9rem;
+	margin-top: 1rem;
+	color: rgb(148, 148, 149);
+}
+
+.GlowingButton {
+	position: relative;
+	padding: 10px 20px;
+	margin-top: 1rem;
+	color: #ffffff;
+	background-color: transparent;
+	cursor: pointer;
+	border: 2px solid transparent;
+	outline: none;
+	transition: border-color 0.3s ease-in-out;
+	background-color: transparent;
+}
+
+.GlowingButton::before {
+	content: "";
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	border: 2px solid transparent;
+	border-image: linear-gradient(
+		to bottom right,
+		var(--gradient-color-1),
+		var(--gradient-color-2)
+	);
+	border-image-slice: 1;
+	border-radius: 10px;
+}
+
+.GlowingButton::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: 0 0 0 15px rgba(121, 40, 202, 0.3);
+	filter: blur(12px);
+	border-radius: 10px;
+}
+
+.Links {
+	display: flex;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+.Button {
+	padding: 10px 20px;
+	margin-top: 1rem;
+	color: #ffffff;
+	background-color: transparent;
+	cursor: pointer;
+	border: 2px solid #007cf0;
+	transition: border-color 0.3s ease-in-out;
+	background-color: transparent;
+	border-radius: 10px;
+}
