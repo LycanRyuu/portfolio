@@ -1,4 +1,6 @@
 import styles from "../styles/About.module.scss";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const About = () => {
 	return (
@@ -17,11 +19,18 @@ const About = () => {
 				the power of asynchronous code, I ensure optimal performance and
 				scalability.
 			</p>
-			<button className={styles.GlowingButton}>Download Resume</button>
 			<div className={styles.Links}>
-				<span className='material-icons'>&#xE87C;</span>
-				<button className={styles.Button}>Github</button>
-				<button className={styles.Button}>LinkedIn</button>
+				<button className={styles.GlowingButton}>
+					Download Resume
+				</button>
+				<button className={styles.Button}>
+					Github
+					<GitHubIcon />
+				</button>
+				<button className={styles.Button}>
+					LinkedIn
+					<LinkedInIcon />
+				</button>
 			</div>
 		</div>
 	);

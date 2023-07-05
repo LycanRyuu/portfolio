@@ -1,13 +1,13 @@
-import styles from "../styles/EducationItem.module.scss";
+import styles from "../styles/ExperienceItem.module.scss";
 
 const ExperienceItem = ({ company, location, role, period, technologies }) => {
 	return (
-		<div>
-			<h3 className={styles.InstitutionName}>{company}</h3>
-			<p>{location}</p>
-			<p>{role}</p>
-			<p>{period}</p>
-			<p>{technologies}</p>
+		<div className={styles.ExperienceItem}>
+			<p className={styles.InstitutionName}>{company}</p>
+			<h3 className={styles.Role}>{role}</h3>
+			<p className={styles.Location}>{location}</p>
+			<p className={styles.Technologies}>{period}</p>
+			<p className={styles.Technologies}>{technologies}</p>
 		</div>
 	);
 };

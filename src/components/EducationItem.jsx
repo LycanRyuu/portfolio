@@ -1,4 +1,4 @@
-import styles from "../styles/EducationItem.module.scss";
+import styles from "../styles/ExperienceItem.module.scss";
 
 const EducationItem = ({
 	institution,
@@ -8,12 +8,12 @@ const EducationItem = ({
 	year,
 }) => {
 	return (
-		<div>
-			<h3 className={styles.InstitutionName}>{institution}</h3>
-			<p>{location}</p>
-			<p>{curriculum}</p>
-			<p>{duration}</p>
-			<p>{year}</p>
+		<div className={styles.ExperienceItem}>
+			<p className={styles.InstitutionName}>{institution}</p>
+			<h3 className={styles.Role}>{curriculum}</h3>
+			<p className={styles.Location}>{location}</p>
+			<p className={styles.Technologies}>{duration}</p>
+			<p className={styles.Technologies}>{year}</p>
 		</div>
 	);
 };

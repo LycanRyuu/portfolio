@@ -1,4 +1,5 @@
 import EducationItem from "./EducationItem";
+import styles from "../styles/Experience.module.scss";
 
 const Education = () => {
 	const educationList = [
@@ -21,9 +22,11 @@ const Education = () => {
 	return (
 		<div>
 			<h2>Education</h2>
-			{educationList.map((item, i) => (
-				<EducationItem {...item} key={i} />
-			))}
+			<div className={styles.Experience}>
+				{educationList.map((item, i) => (
+					<EducationItem {...item} key={i} />
+				))}
+			</div>
 		</div>
 	);
 };
