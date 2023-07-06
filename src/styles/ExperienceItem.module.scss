@@ -1,6 +1,30 @@
 .ExperienceItem {
+	position: relative;
 	padding: 2.5rem;
 	background-color: rgb(32, 32, 34);
+	cursor: pointer;
+	transition: transform 0.2s;
+
+	// &::before {
+	// 	content: "";
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: 0;
+	// 	right: 0;
+	// 	bottom: 0;
+	// 	background-color: rgba(0, 0, 0, 0.5);
+	// 	z-index: -1;
+	// 	opacity: 0;
+	// 	transition: opacity 0.4s;
+	// }
+
+	&:hover {
+		transform: scale(1.1);
+
+		// &::before {
+		// 	opacity: 1;
+		// }
+	}
 }
 
 .InstitutionName {
@@ -18,4 +42,5 @@
 
 .Technologies {
 	color: rgb(148, 148, 149);
+	padding-top: 1.5rem;
 }

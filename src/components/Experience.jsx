@@ -5,14 +5,14 @@ const Experience = () => {
 	const experienceList = [
 		{
 			company: "Super Six Sports Gaming",
-			location: "Noida, Uttar Pradesh",
+			location: "Noida",
 			role: "Backend Developer",
 			period: "January, 2023 - Present",
 			technologies: "Go, MySQL, Redis, RabbitMQ, MongoDB",
 		},
 		{
 			company: "Bharati Airtel",
-			location: "Gurugram, Haryana",
+			location: "Gurugram",
 			role: "Full Stack Developer",
 			period: "June, 2021 - January, 2023",
 			technologies: "React, Redux, Microfrontend, PWAs",
@@ -20,13 +20,11 @@ const Experience = () => {
 	];
 
 	return (
-		<div>
+		<div className={styles.Experience}>
 			<h2>Experience</h2>
-			<div className={styles.Experience}>
-				{experienceList.map((item, i) => (
-					<ExperienceItem {...item} key={i} />
-				))}
-			</div>
+			{experienceList.map((item, i) => (
+				<ExperienceItem {...item} key={i} />
+			))}
 		</div>
 	);
 };

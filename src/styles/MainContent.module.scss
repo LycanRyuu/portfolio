@@ -1,5 +1,7 @@
 .MainContent {
-	/* padding: 6rem 2rem; */
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
 	margin-top: 6rem;
 	overflow-x: auto;
 }
