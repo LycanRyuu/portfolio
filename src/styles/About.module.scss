@@ -4,10 +4,7 @@
 }
 
 .About {
-	/* display: flex;
-	justify-content: center;
-	align-items: center; */
-	padding: 2.5rem 2rem;
+	padding: 3.5rem;
 }
 
 .Name {
@@ -60,14 +57,14 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		box-shadow: 0 0 0 15px rgba(121, 40, 202, 0.3);
+		// box-shadow: 0 0 0 15px rgba(121, 40, 202, 0.3);
 		filter: blur(12px);
 		border-radius: 10px;
 		transition: box-shadow 0.1s ease-in-out;
 	}
 
 	&:hover::after {
-		box-shadow: 0 0 0 15px rgba(121, 40, 202, 0.4);
+		box-shadow: 0 0 0 15px rgba(121, 40, 202, 0.3);
 	}
 }
 
@@ -91,9 +88,10 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: rgb(28, 28, 28);
 	gap: 1rem;
 }
 
 .Button:hover {
-	background-color: rgb(28, 28, 28);
+	background-color: rgb(33, 33, 33);
 }

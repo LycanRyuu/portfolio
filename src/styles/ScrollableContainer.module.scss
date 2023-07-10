@@ -1,0 +1,15 @@
+.ScrollMask {
+	position: absolute;
+	background: #151515;
+	height: 100%;
+	top: 0;
+	right: 0;
+	width: 0.4em;
+	-webkit-transition: all 0.5s;
+	opacity: 1;
+}
+
+.ScrollableContainer:hover .ScrollMask {
+	opacity: 0;
+	-webkit-transition: all 0.5s;
+}

@@ -3,14 +3,17 @@ import Skills from "./Skills";
 import Education from "./Education";
 import Experience from "./Experience";
 import Projects from "./Projects";
+import ScrollableContainer from "./ScrollableContainer";
 
 const MainContent = () => {
 	return (
 		<div className={styles.MainContent}>
-			<Experience />
-			<Education />
-			<Skills />
-			<Projects />
+			<ScrollableContainer>
+				<Experience />
+				<Education />
+				<Skills />
+				<Projects />
+			</ScrollableContainer>
 		</div>
 	);
 };

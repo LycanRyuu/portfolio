@@ -1,0 +1,14 @@
+.Skills {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+}
+
+.Skill {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.Skill > img {
+	height: 50px;
+}
