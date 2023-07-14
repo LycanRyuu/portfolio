@@ -1,3 +1,5 @@
+@import "Animations";
+
 :root {
 	--gradient-color-1: #7928ca;
 	--gradient-color-2: #ff0080;
@@ -9,16 +11,22 @@
 
 .Name {
 	font-size: 3rem;
+	opacity: 0;
+	animation: scrollIn 0.8s ease-in-out forwards;
 }
 
 .Title {
 	margin-bottom: 1rem;
+	opacity: 0;
+	animation: scrollIn 0.8s 0.15s ease-in-out forwards;
 }
 
 .AboutText {
 	font-size: 0.9rem;
 	margin-top: 1rem;
 	color: rgb(148, 148, 149);
+	opacity: 0;
+	animation: scrollIn 0.8s 0.25s ease-in-out forwards;
 }
 
 .GlowingButton {
@@ -57,14 +65,17 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		// box-shadow: 0 0 0 15px rgba(121, 40, 202, 0.3);
 		filter: blur(12px);
 		border-radius: 10px;
 		transition: box-shadow 0.1s ease-in-out;
 	}
 
-	&:hover::after {
-		box-shadow: 0 0 0 15px rgba(121, 40, 202, 0.3);
+	&:hover {
+		transition: transform 0.3s ease;
+
+		&::after {
+			box-shadow: 0 0 0 15px rgba(121, 40, 202, 0.3);
+		}
 	}
 }
 
@@ -72,6 +83,8 @@
 	display: flex;
 	gap: 1rem;
 	margin-top: 1rem;
+	opacity: 0;
+	animation: scrollIn 0.8s 0.35s ease-in-out forwards;
 }
 
 .Button {
@@ -90,8 +103,9 @@
 	align-items: center;
 	background-color: rgb(28, 28, 28);
 	gap: 1rem;
-}
+	transition: background-color 0.2s, transform 0.3s ease-in-out;
 
-.Button:hover {
-	background-color: rgb(33, 33, 33);
+	&:hover {
+		background-color: rgb(33, 33, 33);
+	}
 }

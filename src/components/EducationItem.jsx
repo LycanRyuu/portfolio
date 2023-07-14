@@ -1,8 +1,8 @@
 import styles from "../styles/ExperienceItem.module.scss";
 
-const EducationItem = ({ institution, location, curriculum, year }) => {
+const EducationItem = ({ institution, location, curriculum, year, style }) => {
 	return (
-		<div className={styles.ExperienceItem}>
+		<div className={styles.ExperienceItem} style={style}>
 			<p className={styles.InstitutionName}>
 				{[institution, location].join(", ")}
 			</p>

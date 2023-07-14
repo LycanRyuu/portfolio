@@ -21,9 +21,13 @@ const Experience = () => {
 
 	return (
 		<div className={styles.Experience}>
-			<h2>Experience</h2>
+			<h2 className={styles.Title}>Experience</h2>
 			{experienceList.map((item, i) => (
-				<ExperienceItem {...item} key={i} />
+				<ExperienceItem
+					{...item}
+					key={i}
+					style={{ animationDelay: `${0.1 * (i + 1)}s` }}
+				/>
 			))}
 		</div>
 	);

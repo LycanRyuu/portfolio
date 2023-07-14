@@ -19,9 +19,15 @@ const Education = () => {
 
 	return (
 		<div className={styles.Experience}>
-			<h2>Education</h2>
+			<h2 className={styles.Title} style={{ animationDelay: "0.3s" }}>
+				Education
+			</h2>
 			{educationList.map((item, i) => (
-				<EducationItem {...item} key={i} />
+				<EducationItem
+					{...item}
+					key={i}
+					style={{ animationDelay: `${0.3 + 0.1 * (i + 1)}s` }}
+				/>
 			))}
 		</div>
 	);

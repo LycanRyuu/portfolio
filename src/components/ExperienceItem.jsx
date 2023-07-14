@@ -1,8 +1,15 @@
 import styles from "../styles/ExperienceItem.module.scss";
 
-const ExperienceItem = ({ company, location, role, period, technologies }) => {
+const ExperienceItem = ({
+	company,
+	location,
+	role,
+	period,
+	technologies,
+	style,
+}) => {
 	return (
-		<div className={styles.ExperienceItem}>
+		<div className={styles.ExperienceItem} style={style}>
 			<p className={styles.InstitutionName}>
 				{[company, location].join(", ")}
 			</p>
