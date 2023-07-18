@@ -36,9 +36,10 @@
 	color: #ffffff;
 	background-color: transparent;
 	cursor: pointer;
-	border: 2px solid transparent;
+	// border: 2px solid transparent;
+	border: none;
 	outline: none;
-	transition: border-color 0.3s ease-in-out;
+	transition: border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 	background-color: transparent;
 
 	&::before {
@@ -48,14 +49,14 @@
 		left: -2px;
 		right: -2px;
 		bottom: -2px;
-		border: 2px solid transparent;
+		border: 1px solid transparent;
 		border-image: linear-gradient(
 			to bottom right,
 			var(--gradient-color-1),
 			var(--gradient-color-2)
 		);
 		border-image-slice: 1;
-		border-radius: 10px;
+		// border-radius: 10px;
 	}
 
 	&::after {
@@ -66,12 +67,12 @@
 		right: 0;
 		bottom: 0;
 		filter: blur(12px);
-		border-radius: 10px;
+		// border-radius: 10px;
 		transition: box-shadow 0.1s ease-in-out;
 	}
 
 	&:hover {
-		transition: transform 0.3s ease;
+		transform: translateY(5px);
 
 		&::after {
 			box-shadow: 0 0 0 15px rgba(121, 40, 202, 0.3);
@@ -96,7 +97,7 @@
 	border: 2px solid #007cf0;
 	transition: border-color 0.3s ease-in-out;
 	border: none;
-	border-radius: 10px;
+	// border-radius: 10px;
 	transition: background-color 0.2s;
 	display: flex;
 	justify-content: center;
@@ -107,5 +108,6 @@
 
 	&:hover {
 		background-color: rgb(33, 33, 33);
+		transform: translateY(5px);
 	}
 }

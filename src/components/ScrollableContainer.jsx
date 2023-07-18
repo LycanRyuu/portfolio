@@ -1,12 +1,26 @@
-import React from "react";
+import { useRef } from "react";
 import styles from "../styles/ScrollableContainer.module.scss";
 
-const ScrollableContainer = ({ children }) => {
+const ScrollableContainer = ({ styling, children }) => {
+	const containerRef = useRef(null);
+
+	const handleScroll = () => {
+		const container = containerRef.current;
+		if (container) {
+			const scrollOffset = container.scrollTop;
+			container.style.setProperty("--scroll-offset", scrollOffset);
+		}
+	};
+
 	return (
-		<React.Fragment className={styles.ScrollableContainer}>
+		<div
+			className={[styles.ScrollableContainer, styling].join(" ")}
+			ref={containerRef}
+			onScroll={handleScroll}
+		>
 			{children}
 			<div className={styles.ScrollMask} />
-		</React.Fragment>
+		</div>
 	);
 };
 

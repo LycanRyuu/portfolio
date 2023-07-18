@@ -1,32 +1,24 @@
 import ExperienceItem from "./ExperienceItem";
 import styles from "../styles/Experience.module.scss";
+import { ExperienceList } from "../config/Data";
+import Config from "../config/Config";
 
 const Experience = () => {
-	const experienceList = [
-		{
-			company: "Super Six Sports Gaming",
-			location: "Noida",
-			role: "Backend Developer",
-			period: "January, 2023 - Present",
-			technologies: "Go, MySQL, Redis, RabbitMQ, MongoDB",
-		},
-		{
-			company: "Bharati Airtel",
-			location: "Gurugram",
-			role: "Full Stack Developer",
-			period: "June, 2021 - January, 2023",
-			technologies: "React, Redux, Microfrontend, PWAs",
-		},
-	];
-
 	return (
 		<div className={styles.Experience}>
-			<h2 className={styles.Title}>Experience</h2>
-			{experienceList.map((item, i) => (
+			<h2 className={styles.Title} style={{ animationDelay: "0.3s" }}>
+				Experience
+			</h2>
+			{ExperienceList.map((item, i) => (
 				<ExperienceItem
 					{...item}
 					key={i}
-					style={{ animationDelay: `${0.1 * (i + 1)}s` }}
+					style={{
+						animationDelay: `${
+							Config.SCROLLING_SECTION_ANIMATION_OFFSET +
+							Config.SCROLL_ANIMATION_DELAY_OFFSET * (i + 1)
+						}s`,
+					}}
 				/>
 			))}
 		</div>

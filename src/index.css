@@ -67,11 +67,3 @@ html {
 html:hover {
 	scrollbar-color: #555 #1a1a1a;
 }
-
-button {
-	transition: transform 0.3s ease;
-}
-
-button:hover {
-	transform: translateY(5px);
-}
