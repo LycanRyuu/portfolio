@@ -1,6 +1,7 @@
 import styles from "../styles/About.module.scss";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import Config from "../config/Config";
 
 const About = () => {
 	const getYearsOfExperience = () => {
@@ -19,6 +20,10 @@ const About = () => {
 		}
 
 		return yearsOfExperience;
+	};
+
+	const openURL = (link) => {
+		window.open(link, "_blank");
 	};
 
 	return (
@@ -41,37 +46,35 @@ const About = () => {
 				scalability.
 			</p>
 			<p className={styles.AboutText}>
-				I am a full stack developer with over 2 years of experience
-				specializing in React and Go. My expertise lies in crafting
-				robust and user-friendly web applications using React. I have a
-				deep understanding of frontend development and have honed my
-				skills in building highly interactive and responsive user
-				interfaces. Additionally, I possess a strong background in
-				backend development, particularly in utilizing Go and Python. I
-				leverage the power of these languages to write efficient and
-				optimized backend scripts. One of my key strengths is my ability
-				to harness the true potential of a system by implementing
-				asynchronous code, which results in optimal performance and
-				scalability. Throughout my career, I have demonstrated a keen
-				eye for detail and a passion for writing clean, maintainable
-				code. I enjoy taking on new challenges and continuously
-				expanding my skill set. With my experience and expertise, I am
-				confident in delivering high-quality software solutions that
-				meet the needs of both users and stakeholders.
+				Throughout my career, I have demonstrated a keen eye for detail
+				and a passion for writing clean, maintainable code. I enjoy
+				taking on new challenges and continuously expanding my skill
+				set. With my experience and expertise, I am confident in
+				delivering high-quality software solutions that meet the needs
+				of both users and stakeholders.
 			</p>
 			<p className={styles.AboutText}>
 				I am eager to contribute my skills and knowledge to create
 				innovative and impactful projects.
 			</p>
 			<div className={styles.Links}>
-				<button className={styles.GlowingButton}>
+				<button
+					className={styles.GlowingButton}
+					onClick={() => openURL(Config.RESUME_URL)}
+				>
 					Download Resume
 				</button>
-				<button className={styles.Button}>
+				<button
+					className={styles.Button}
+					onClick={() => openURL(Config.GITHUB_URL)}
+				>
 					Github
 					<GitHubIcon />
 				</button>
-				<button className={styles.Button}>
+				<button
+					className={styles.Button}
+					onClick={() => openURL(Config.LINKEDIN_URl)}
+				>
 					LinkedIn
 					<LinkedInIcon />
 				</button>
