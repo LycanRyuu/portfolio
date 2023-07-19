@@ -1,7 +1,4 @@
 import styles from "../styles/About.module.scss";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import Config from "../config/Config";
 
 const About = () => {
 	const getYearsOfExperience = () => {
@@ -20,10 +17,6 @@ const About = () => {
 		}
 
 		return yearsOfExperience;
-	};
-
-	const openURL = (link) => {
-		window.open(link, "_blank");
 	};
 
 	return (
@@ -57,28 +50,6 @@ const About = () => {
 				I am eager to contribute my skills and knowledge to create
 				innovative and impactful projects.
 			</p>
-			<div className={styles.Links}>
-				<button
-					className={styles.GlowingButton}
-					onClick={() => openURL(Config.RESUME_URL)}
-				>
-					Download Resume
-				</button>
-				<button
-					className={styles.Button}
-					onClick={() => openURL(Config.GITHUB_URL)}
-				>
-					Github
-					<GitHubIcon />
-				</button>
-				<button
-					className={styles.Button}
-					onClick={() => openURL(Config.LINKEDIN_URl)}
-				>
-					LinkedIn
-					<LinkedInIcon />
-				</button>
-			</div>
 		</div>
 	);
 };

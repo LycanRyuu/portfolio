@@ -25,7 +25,7 @@ export const EducationList = [
 	{
 		institution: "Delhi Public School",
 		location: "Noida",
-		curriculum: "Schooling",
+		curriculum: "XII",
 		year: 2017,
 	},
 ];
