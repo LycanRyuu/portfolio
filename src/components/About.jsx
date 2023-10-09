@@ -4,18 +4,13 @@ import SectionProgress from "./SectionProgress";
 const About = () => {
 	const getYearsOfExperience = () => {
 		const currentDate = new Date();
-
-		// Set the start date of your experience
 		const startDate = new Date(2021, 6); // June 2021
 
-		// Calculate the difference in years
 		let yearsOfExperience =
 			currentDate.getFullYear() - startDate.getFullYear();
 
 		// Adjust for the current month
-		if (currentDate.getMonth() < startDate.getMonth()) {
-			yearsOfExperience--;
-		}
+		if (currentDate.getMonth() < startDate.getMonth()) yearsOfExperience--;
 
 		return yearsOfExperience;
 	};

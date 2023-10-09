@@ -13,13 +13,13 @@
 .Name {
 	font-size: 3rem;
 	opacity: 0;
-	animation: scrollIn 0.8s ease-in-out forwards;
+	animation: scrollIn 0.8s 2.5s ease-in-out forwards;
 }
 
 .Title {
 	margin-bottom: 1rem;
 	opacity: 0;
-	animation: scrollIn 0.8s 0.15s ease-in-out forwards;
+	animation: scrollIn 0.8s 2.65s ease-in-out forwards;
 }
 
 .AboutText {
@@ -27,5 +27,5 @@
 	margin-top: 1rem;
 	color: rgb(148, 148, 149);
 	opacity: 0;
-	animation: scrollIn 0.8s 0.25s ease-in-out forwards;
+	animation: scrollIn 0.8s 2.75s ease-in-out forwards;
 }
