@@ -1,37 +1,15 @@
 import styles from "../styles/Skills.module.scss";
-import ReactSvg from "../assets/react.svg";
-import GoSVG from "../assets/go.svg";
-import MySQLSVG from "../assets/mysql.svg";
+import { Skillset } from "../config/Data";
 
 const Skills = () => {
-	const skillSet = [
-		{
-			name: "React",
-			logo: ReactSvg,
-		},
-		{
-			name: "Go",
-			logo: GoSVG,
-		},
-		{
-			name: "MySQL",
-			logo: MySQLSVG,
-		},
-	];
-
 	return (
-		<div>
-			<h2>Skills</h2>
+		<div className='section'>
+			<h2 className={styles.Title}>Skills</h2>
 			<div className={styles.Skills}>
-				{skillSet.map((item, i) => (
+				{Skillset.map((item, i) => (
 					<Items key={i} {...item} />
 				))}
 			</div>
-			{/* <p>React, Go, MySQL, Redis, RabbitMQ, Python, Node</p>
-			<p>
-				React Native, Electron JS, MongoDB, Machine Learning and Deep
-				Learning
-			</p> */}
 		</div>
 	);
 };

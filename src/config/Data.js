@@ -1,3 +1,14 @@
+import ReactSvg from "../assets/react.svg";
+import GoSVG from "../assets/go.svg";
+import MySQLSVG from "../assets/mysql.svg";
+import RedisSVG from "../assets/redis.svg";
+import ElectronSVG from "../assets/electronjs.svg";
+import RabbitMQSVG from "../assets/rabbitmq.svg";
+import PythonSVG from "../assets/python.svg";
+import NodeSVG from "../assets/node.svg";
+import NodeJSSVG from "../assets/nodejs.svg";
+import MongoDBSVG from "../assets/mongodb.svg";
+
 export const ExperienceList = [
 	{
 		company: "Super Six Sports Gaming",
@@ -25,7 +36,51 @@ export const EducationList = [
 	{
 		institution: "Delhi Public School",
 		location: "Noida",
-		curriculum: "XII",
+		curriculum: "Senior Secondary Education",
 		year: 2017,
+	},
+];
+
+export const Skillset = [
+	{
+		name: "React",
+		logo: ReactSvg,
+	},
+	{
+		name: "Go",
+		logo: GoSVG,
+	},
+	{
+		name: "Python",
+		logo: PythonSVG,
+	},
+	{
+		name: "MySQL",
+		logo: MySQLSVG,
+	},
+	{
+		name: "Redis",
+		logo: RedisSVG,
+	},
+	{
+		name: "RabbitMQ",
+		logo: RabbitMQSVG,
+	},
+	{
+		name: "MongoDB",
+		logo: MongoDBSVG,
+	},
+	{
+		name: "Node",
+		// logo: NodeSVG,
+		logo: NodeJSSVG,
+	},
+	{
+		name: "React Native",
+		logo: ReactSvg,
+	},
+	{
+		name: "Electron",
+		logo: ElectronSVG,
 	},
 ];

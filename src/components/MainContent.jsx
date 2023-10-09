@@ -1,5 +1,5 @@
 import styles from "../styles/MainContent.module.scss";
-// import Skills from "./Skills";
+import Skills from "./Skills";
 import Education from "./Education";
 import Experience from "./Experience";
 // import Projects from "./Projects";
@@ -10,7 +10,7 @@ const MainContent = () => {
 		<ScrollableContainer styling={styles.MainContent}>
 			<Experience />
 			<Education />
-			{/* <Skills /> */}
+			<Skills />
 			{/* <Projects /> */}
 		</ScrollableContainer>
 	);

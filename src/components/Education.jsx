@@ -5,7 +5,7 @@ import Config from "../config/Config";
 
 const Education = () => {
 	return (
-		<div className={styles.Experience}>
+		<div className={[styles.Experience, "section"].join(" ")}>
 			<h2 className={styles.Title} style={{ animationDelay: "0.6s" }}>
 				Education
 			</h2>

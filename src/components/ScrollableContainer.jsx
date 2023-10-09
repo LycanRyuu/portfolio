@@ -17,6 +17,7 @@ const ScrollableContainer = ({ styling, children }) => {
 			className={[styles.ScrollableContainer, styling].join(" ")}
 			ref={containerRef}
 			onScroll={handleScroll}
+			id='scroll'
 		>
 			{children}
 			<div className={styles.ScrollMask} />

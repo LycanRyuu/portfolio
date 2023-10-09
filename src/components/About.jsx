@@ -1,4 +1,5 @@
 import styles from "../styles/About.module.scss";
+import SectionProgress from "./SectionProgress";
 
 const About = () => {
 	const getYearsOfExperience = () => {
@@ -50,6 +51,7 @@ const About = () => {
 				I am eager to contribute my skills and knowledge to create
 				innovative and impactful projects.
 			</p>
+			{/* <SectionProgress /> */}
 		</div>
 	);
 };
